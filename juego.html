@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cuidado Ambiental</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Mapa</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Descubre contenido tras las hojas.</h1>
+    <div class="game-container">
+        <img src="img/imagenjuego.jpg" alt="Imagen Central" class="main-image">
+        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="top: 10%; left: 20%;">
+        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="top: 30%; right: 15%;">
+        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="bottom: 25%; left: 35%;">
+        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="top: 5%; right: 5%;">
+        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="bottom: 10%; left: 10%;">
+
+        </div>
+    </main>
+    <script>
+        const leaves = document.querySelectorAll('.hoja');
+        leaves.forEach(hoja => {
+            hoja.addEventListener('click', function() {
+                this.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

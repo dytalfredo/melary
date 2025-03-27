@@ -1,0 +1,82 @@
+main {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Un fondo claro para contrastar */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    position: relative; /* Para que las hojas se posicionen relativas a este contenedor */
+    width: 60vw; /* 60% del ancho de la ventana */
+    height: 60vh; /* 60% de la altura de la ventana */
+    max-width: 800px; /* Opcional: para limitar el tamaño en pantallas grandes */
+    max-height: 600px; /* Opcional: para limitar el tamaño en pantallas grandes */
+}
+
+.main-image {
+    display: block; /* Para evitar espacios extra debajo de la imagen */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra el contenedor sin deformarse */
+}
+
+.hoja {
+    position: absolute;
+    width: 100%; /* Tamaño de las hojas, puedes ajustarlo */
+    height: auto; /* Mantiene la proporción de la imagen de la hoja */
+    cursor: pointer; /* Indica que se puede hacer clic en la hoja */
+    transition: opacity 0.3s ease-in-out; /* Transición suave al desaparecer */
+}
+
+.hoja:hover {
+    opacity: 0; /* Ligeramente transparente al pasar el ratón */
+}
+
+/* Ejemplo de posicionamiento desorganizado (puedes ajustar estos valores) */
+.hoja:nth-child(2) {
+    width: 100px;
+    top: 15%;
+    left: 10%;
+    transform: rotate(15deg);
+}
+
+.hoja:nth-child(2):hover::before{
+    content: "hola soy melary";
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+}
+
+.hoja:nth-child(3) {
+    width: 145px;
+    top: 40%;
+    right: 20%;
+    transform: rotate(-20deg);
+}
+
+.hoja:nth-child(4) {
+    width: 120px;
+    bottom: 15%;
+    left: 45%;
+    transform: rotate(5deg);
+}
+
+.hoja:nth-child(5) {
+    width: 155px;
+    top: 10%;
+    right: 30%;
+    transform: rotate(-10deg);
+}
+
+.hoja:nth-child(6) {
+    width: 140px;
+    bottom: 20%;
+    left: 5%;
+    transform: rotate(25deg);
+}
+
+/* Agrega más estilos para más hojas si es necesario */
