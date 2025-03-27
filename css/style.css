@@ -102,7 +102,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
  
-    height: 200px;
+    height: 100px;
     justify-content: space-between;
     
+}
+
+#galeria img{
+    max-height: 200px;
 }
