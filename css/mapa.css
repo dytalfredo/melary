@@ -1,0 +1,14 @@
+#contenedormapa h1{
+    color: #6e6702;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.cajita{
+    width: 80%;
+    background-color: azure;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+

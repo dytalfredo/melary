@@ -10,33 +10,52 @@
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <img src="/img/logo.png" class="imagenzoom" alt="logo de infotoño">   
+            <span>INFOTOÑO</span>
+        </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Mapa</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
                 <li><a href="juego.html">Juego</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Descubre contenido tras las hojas.</h1>
-    <div class="game-container">
-        <img src="img/imagenjuego.jpg" alt="Imagen Central" class="main-image">
-        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="top: 10%; left: 20%;">
-        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="top: 30%; right: 15%;">
-        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="bottom: 25%; left: 35%;">
-        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="top: 5%; right: 5%;">
-        <img src="img/hojita.png" alt="Hoja de Otoño" class="hoja" style="bottom: 10%; left: 10%;">
-
+        <h1>Selecciona la Imagen Correcta</h1>
+        <div class="game-container">
+            <h2 class="prompt">¿Cuál de las imagenes es otoño?</h2>
+            <div class="image-choice">
+                <div class="image-option">
+                    <img src="img/atun2.jpg" alt="Opción 1">
+                </div>
+                <div class="image-option">
+                    <img src="img/invierno.jpg" alt="Opción 2">
+                </div>
+            </div>
+            <h2 class="prompt">¿Cuál de los paises tiene mejor otoño?</h2>
+            <div class="image-choice">
+                <div class="image-option">
+                    <img src="img/chile.jpg" alt="Opción 1">
+                </div>
+                <div class="image-option">
+                    <img src="img/vene.jpg" alt="Opción 2">
+                </div>
+            </div>
+            <h2 class="prompt">¿Que color representa al otoño?</h2>
+            <div class="image-choice">
+                <div class="image-option">
+                    <img src="img/aguacate.jpg" alt="Opción 1">
+                </div>
+                <div class="image-option">
+                    <img src="img/naranja.jpg" alt="Opción 2">
+                </div>
+            </div>
         </div>
     </main>
-    <script>
-        const leaves = document.querySelectorAll('.hoja');
-        leaves.forEach(hoja => {
-            hoja.addEventListener('click', function() {
-                this.style.display = 'none';
-            });
-        });
-    </script>
+    <footer>
+        <p>&copy; 2025 Cuidado Ambiental - Todos los derechos reservados. Melary Morales</p>
+    </footer>
 </body>
 </html>

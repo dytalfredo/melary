@@ -1,12 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: 'text', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     background-image: url("/img/atun.jpg");
     background-size: cover;
-    height: 100vh;
+
 }
 
 header {
@@ -22,22 +22,42 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    
+}
+#galeria img {
+    max-height: 200px;
+    max-width: 80%;
 }
 
 nav ul li {
     margin: 0 1em;
 }
 
+nav {
+    display: flex;
+    place-content: center;
+    padding: 1rem 1rem;
+}
+nav span{
+    text-align: center;
+    font-family: 'winki', sans-serif;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.logo img{
+    max-width: 40px;
+}
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.2em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #db9501; /* Verde más oscuro */
+    background-color: #D75804;
 }
 
 main {
@@ -55,9 +75,17 @@ main {
  
 }
 
-#hero h1 {
+h1{
+    font-family: 'winki', sans-serif;   
+    font-weight: bold;
+    text-align: center;
     color: #6e6702;
     margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+#hero h1 {
+
 }
 
 
@@ -82,7 +110,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed; /* Para que se quede en la parte inferior */
+   /* Para que se quede en la parte inferior */
     bottom: 0;
     width: 100%;
 }
@@ -99,14 +127,48 @@ footer {
 
 #galeria{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
- 
-    height: 100px;
-    justify-content: space-between;
-    
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-bottom: 5rem;
 }
 
 #galeria img{
     max-height: 200px;
 }
+
+.imagenzoom{
+    scale:1;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+}
+
+.imagenzoom:hover {
+ scale:1.1;
+}
+
+
+@font-face {
+    font-family: 'winki'; /* El nombre que le darás a tu fuente */
+    src: url('../fonts/WinkySans-Regular.ttf') format('truetype'); /* Cambia 'woff2' y 'woff' a 'truetype' */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'winki'; /* El nombre que le darás a tu fuente */
+    src: url('../fonts/WinkySans-Bold.ttf') format('truetype'); /* Cambia 'woff2' y 'woff' a 'truetype' */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'text'; /* El nombre que le darás a tu fuente */
+    src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype'); /* Cambia 'woff2' y 'woff' a 'truetype' */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
