@@ -148,6 +148,29 @@ footer {
  scale:1.1;
 }
 
+.cajita{
+    display: flex;
+    place-content: center;
+}
+
+.mapa{
+    background-color: #f4f4f4;
+}
+
+svg path{
+    fill: #D75804;
+}
+
+#link use{
+    fill: #D75804;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+#link:hover use{
+    opacity: 1;
+}
+
 
 @font-face {
     font-family: 'winki'; /* El nombre que le darás a tu fuente */
